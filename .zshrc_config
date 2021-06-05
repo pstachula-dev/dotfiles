@@ -1,0 +1,24 @@
+export ZSH="/home/ald890/.oh-my-zsh"
+export EDITOR='nvim'
+export PATH=$PATH:$HOME/.local/bin
+
+ # open projects on start
+cd ~/projects
+
+# THEME example robbyrussell
+ZSH_THEME="robbyrussell"
+
+# Alias
+alias cat="batcat"
+alias vim="nvim"
+source $HOME/.zsh_alias
+
+# NVM
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+# ZSH Plugins
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions zsh-completions)
+
+# Load oh my zsh
+source $ZSH/oh-my-zsh.sh
