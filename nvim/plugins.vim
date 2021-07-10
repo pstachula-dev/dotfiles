@@ -1,5 +1,5 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
-
+    Plug 'arcticicestudio/nord-vim'
     Plug 'sheerun/vim-polyglot'
     Plug 'scrooloose/NERDTree'
     Plug 'jiangmiao/auto-pairs'
@@ -7,22 +7,40 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-gitgutter'
     Plug 'itchyny/lightline.vim'
-
+    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     Plug 'neoclide/coc.nvim', { 'branch': 'release' }
-
+    Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+    "Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+    Plug 'tpope/vim-fugitive'
+    Plug 'junegunn/gv.vim'
+    Plug 'f-person/git-blame.nvim'
 call plug#end()
 
-nmap <C-P> :GFiles<CR>
-nmap <C-F> :Rg<CR>
-nmap <C-T> :NERDTree<CR>
+" My plugins conf
+
+let g:gitblame_date_format = '%r'
 
 let g:coc_global_extensions = [
   \ 'coc-tsserver',
-  \ 'coc-eslint'
+  \ 'coc-eslint',
+  \ 'coc-prettier'
   \ ]
 
-" COC CONFIG
+let g:lightline = {
+     \ 'colorschme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
+      \ }
 
+" My plugins conf end
+
+
+" COC CONFIG
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " unicode characters in the file autoload/float.vim
 set encoding=utf-8
