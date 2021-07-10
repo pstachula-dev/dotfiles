@@ -10,7 +10,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     Plug 'neoclide/coc.nvim', { 'branch': 'release' }
     Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-    "Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
     Plug 'tpope/vim-fugitive'
     Plug 'junegunn/gv.vim'
     Plug 'f-person/git-blame.nvim'
