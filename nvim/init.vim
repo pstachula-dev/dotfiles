@@ -30,9 +30,6 @@ nmap <C-Up> :wincmd k<CR>
 nmap <C-Down> :wincmd j<CR>
 nmap <C-Left> :wincmd h<CR>
 nmap <C-Right> :wincmd l<CR>
-
 nmap tf :NERDTreeFind<CR>
 nmap ff :CocCommand eslint.executeAutofix<CR>
 nmap bb :GitBlameToggle<CR>
-
-let g:gitblame_enabled = 0
