@@ -18,6 +18,7 @@ call plug#end()
 " My plugins conf
 
 let g:gitblame_date_format = '%r'
+let g:gitblame_enabled = 0
 
 let g:coc_global_extensions = [
   \ 'coc-tsserver',
@@ -35,3 +36,4 @@ let g:lightline = {
       \   'gitbranch': 'FugitiveHead'
       \ },
       \ }
+
