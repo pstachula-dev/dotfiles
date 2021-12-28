@@ -1,18 +1,23 @@
-# Basic
+# Terminal basics
+
+#### neovim
+```
+https://github.com/neovim/neovim/wiki/Installing-Neovim)
+```
+
+#### batcat
+```
+https://github.com/sharkdp/bat#installation)
+```
+
+### tldr-pages
+```
+npm install -g tldr
+```
 
 #### nvm
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-```
-
-#### neovim
-```
-https://github.com/neovim/neovim/wiki/Installing-Neovim
-```
-
-### batcat
-```
-https://github.com/sharkdp/bat#installation
 ```
 
 #### Oh My Zsh
