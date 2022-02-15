@@ -15,12 +15,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'kdheepak/lazygit.nvim'
 call plug#end()
 
-"lua << EOF
-"require('telescope').setup{
-"    defaults = { file_ignore_patterns = {"node_modules"} }
-"}
-"EOF
-
 let g:gitblame_date_format = '%r'
 
 let g:coc_global_extensions = [
