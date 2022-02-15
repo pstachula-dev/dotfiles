@@ -7,13 +7,19 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'itchyny/lightline.vim'
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     Plug 'neoclide/coc.nvim', { 'branch': 'release' }
-    Plug 'nvim-lua/popup.nvim'
-    Plug 'nvim-lua/plenary.nvim'
-    Plug 'nvim-telescope/telescope.nvim'
+    Plug 'akinsho/bufferline.nvim'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'f-person/git-blame.nvim'
     Plug 'kdheepak/lazygit.nvim'
 call plug#end()
+
+"lua << EOF
+"require('telescope').setup{
+"    defaults = { file_ignore_patterns = {"node_modules"} }
+"}
+"EOF
 
 let g:gitblame_date_format = '%r'
 
