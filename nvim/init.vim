@@ -1,7 +1,7 @@
 source $HOME/.config/nvim/plugins.vim
 source $HOME/.config/nvim/coc-config.vim
 
-"set t_Co=256
+set t_Co=256
 colorscheme nord
 syntax enable
 
@@ -27,8 +27,12 @@ nmap <C-T> :NERDTreeToggle<CR>
 nmap <C-Q> :q<CR>
 nmap <C-S> :w<CR>
 nmap <C-G> :LazyGit<CR>
-nmap <C-P> :Telescope find_files<CR>
-nmap <C-F> :Telescope live_grep<CR>
+"nmap <C-P> :Telescope find_files<CR>
+"nmap <C-F> :Telescope live_grep<CR>
+nmap <C-P> :GFiles<CR>
+nmap <C-F> :Rg<CR>
+nmap <C-B> :Buffers<CR>
+
 nmap <C-Up> :wincmd k<CR>
 nmap <C-Down> :wincmd j<CR>
 nmap <C-Left> :wincmd h<CR>
