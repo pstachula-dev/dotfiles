@@ -27,8 +27,6 @@ nmap <C-T> :NERDTreeToggle<CR>
 nmap <C-Q> :q<CR>
 nmap <C-S> :w<CR>
 nmap <C-G> :LazyGit<CR>
-"nmap <C-P> :Telescope find_files<CR>
-"nmap <C-F> :Telescope live_grep<CR>
 nmap <C-P> :GFiles<CR>
 nmap <C-F> :Rg<CR>
 nmap <C-B> :Buffers<CR>
