@@ -4,7 +4,10 @@ bind -n S-Right select-pane -R
 bind -n S-Up select-pane -U
 bind -n S-Down select-pane -D
 
-set -g default-terminal "screen-256color"
+set -g default-terminal "tmux-256color"
+set -ga terminal-overrides ",*256col*:Tc"
 setw -g mouse on
 set-window-option -g automatic-rename on
 set-option -g set-titles on
+set -sg escape-time 0
+
